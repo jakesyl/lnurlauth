@@ -21,8 +21,8 @@ dockers:
   - binaries:
       - main
     image_templates:
-      - "ghcr.io/xplorfin/lnurlauth/lnurlauth:{{ .Tag }}"
-      - "ghcr.io/xplorfin/lnurlauth/lnurlauth:latest"
+      - "ghcr.io/jakesyl/lnurlauth/lnurlauth:{{ .Tag }}"
+      - "ghcr.io/jakesyl/lnurlauth/lnurlauth:latest"
     # extra_files: #any other files you need go in here.
     goos: linux
     dockerfile: docker/Dockerfile.deploy
@@ -49,7 +49,7 @@ changelog:
       - '^test:'
 release:
   github:
-    owner: xplorfin
+    owner: jakesyl
     name: lnurlauth
 
 # add a source archive at release time

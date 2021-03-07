@@ -2,7 +2,7 @@ project_name: lnurl-auth-project
 builds:
   -
     id: main
-    main: ./examples/...
+    main: ./cmd/main.go
     binary: main
     goos:
       - linux

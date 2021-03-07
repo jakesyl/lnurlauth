@@ -1,1 +1,1 @@
-web: bin/examples --localtunnels=false
+web: bin/cmd --localtunnels=false

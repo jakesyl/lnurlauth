@@ -18,12 +18,12 @@ jobs:
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.35.0
         env:
-          GITHUB_TOKEN: ${{ secrets.FOSS_PACKAGE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.github_token }}
           WITH_V: true
       - name: Bump version and push tag (no v)
         uses: anothrNick/github-tag-action@1.35.0
         env:
-          GITHUB_TOKEN: ${{ secrets.FOSS_PACKAGE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.github_token }}
           WITH_V: false
       -
         name: Set up Go

@@ -42,7 +42,7 @@ jobs:
           version: v0.143.0
           args: release --rm-dist
         env:
-          GITHUB_TOKEN: ${{ secrets.FOSS_PACKAGE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.github_token }}
       -
         name: Notify slack success
         if: success()

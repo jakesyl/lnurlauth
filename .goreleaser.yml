@@ -17,17 +17,17 @@ builds:
   -
     env:
       - CGO_ENABLED=0
-dockers:
-  - binaries:
-      - main
-    image_templates:
-      - "ghcr.io/jakesyl/lnurlauth/lnurlauth:{{ .Tag }}"
-      - "ghcr.io/jakesyl/lnurlauth/lnurlauth:latest"
-    # extra_files: #any other files you need go in here.
-    goos: linux
-    dockerfile: docker/Dockerfile.deploy
-    goarch: amd64
-    goarm: ''
+#dockers:
+#  - binaries:
+#      - main
+#    image_templates:
+#      - "ghcr.io/jakesyl/lnurlauth/lnurlauth:{{ .Tag }}"
+#      - "ghcr.io/jakesyl/lnurlauth/lnurlauth:latest"
+#    # extra_files: #any other files you need go in here.
+#    goos: linux
+#    dockerfile: docker/Dockerfile.deploy
+#    goarch: amd64
+#    goarm: ''
 
 archives:
   -

@@ -30,11 +30,11 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: 1.14
-      - name: login
-        run: echo $FOSS_PACKAGE_TOKEN  | docker login -u $FOSS_PACKAGE_USER --password-stdin ghcr.io
-        env:
-          FOSS_PACKAGE_TOKEN: ${{ secrets.FOSS_PACKAGE_TOKEN }}
-          FOSS_PACKAGE_USER: ${{ secrets.FOSS_PACKAGE_USER }}
+#      - name: login
+#        run: echo $FOSS_PACKAGE_TOKEN  | docker login -u $FOSS_PACKAGE_USER --password-stdin ghcr.io
+#        env:
+#          FOSS_PACKAGE_TOKEN: ${{ secrets.FOSS_PACKAGE_TOKEN }}
+#          FOSS_PACKAGE_USER: ${{ secrets.FOSS_PACKAGE_USER }}
       -
         name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v2
